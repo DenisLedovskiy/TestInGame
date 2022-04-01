@@ -7,10 +7,11 @@
 
 import Foundation
 
+//MARK: Структура для данных из JSON
+
 struct DrinksResponse: Codable {
 
     let drinks: [Drinks]
-
 }
 
 struct Drinks: Codable {
@@ -18,5 +19,4 @@ struct Drinks: Codable {
     let strDrink: String
     let strDrinkThumb: String
     let idDrink: String
-
 }

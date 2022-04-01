@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5451F19536E0BC994E5D9086 /* Pods_TestInGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBF3B12B6FE2CF480688930 /* Pods_TestInGame.framework */; };
+		92183A1A27F77FC2003B1D7F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92183A1927F77FC2003B1D7F /* MainView.swift */; };
+		92183A1C27F78369003B1D7F /* ReusableCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92183A1B27F78369003B1D7F /* ReusableCellProtocol.swift */; };
 		9288CC5F27F6478000446521 /* DataSource+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288CC5E27F6478000446521 /* DataSource+Delegate.swift */; };
 		9288CC6127F647AD00446521 /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288CC6027F647AD00446521 /* TextFieldDelegate.swift */; };
 		92A48C1C27F35CBB00B1EE0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A48C1B27F35CBB00B1EE0C /* AppDelegate.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		710B0A67653EB05C1179D664 /* Pods-TestInGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestInGame.release.xcconfig"; path = "Target Support Files/Pods-TestInGame/Pods-TestInGame.release.xcconfig"; sourceTree = "<group>"; };
 		7D889744086F1EEA40CAE7FE /* Pods-TestInGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestInGame.debug.xcconfig"; path = "Target Support Files/Pods-TestInGame/Pods-TestInGame.debug.xcconfig"; sourceTree = "<group>"; };
+		92183A1927F77FC2003B1D7F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		92183A1B27F78369003B1D7F /* ReusableCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCellProtocol.swift; sourceTree = "<group>"; };
 		9288CC5E27F6478000446521 /* DataSource+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSource+Delegate.swift"; sourceTree = "<group>"; };
 		9288CC6027F647AD00446521 /* TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 		92A48C1827F35CBB00B1EE0C /* TestInGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestInGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +77,10 @@
 			children = (
 				92A48C1B27F35CBB00B1EE0C /* AppDelegate.swift */,
 				92A48C1D27F35CBB00B1EE0C /* SceneDelegate.swift */,
+				92183A1B27F78369003B1D7F /* ReusableCellProtocol.swift */,
 				92A48C3127F3643F00B1EE0C /* Models */,
 				92A48C1F27F35CBB00B1EE0C /* MainViewController.swift */,
+				92183A1927F77FC2003B1D7F /* MainView.swift */,
 				9288CC5E27F6478000446521 /* DataSource+Delegate.swift */,
 				9288CC6027F647AD00446521 /* TextFieldDelegate.swift */,
 				92A48C3427F37A3200B1EE0C /* TagCollectionViewCell.swift */,
@@ -226,10 +232,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				92A48C2027F35CBB00B1EE0C /* MainViewController.swift in Sources */,
+				92183A1A27F77FC2003B1D7F /* MainView.swift in Sources */,
 				92A48C1C27F35CBB00B1EE0C /* AppDelegate.swift in Sources */,
 				92A48C3027F362E700B1EE0C /* DrinksJSON.swift in Sources */,
 				92A48C3727F37A8700B1EE0C /* TagFlowLayout.swift in Sources */,
 				92A48C3527F37A3200B1EE0C /* TagCollectionViewCell.swift in Sources */,
+				92183A1C27F78369003B1D7F /* ReusableCellProtocol.swift in Sources */,
 				92A48C1E27F35CBB00B1EE0C /* SceneDelegate.swift in Sources */,
 				9288CC6127F647AD00446521 /* TextFieldDelegate.swift in Sources */,
 				9288CC5F27F6478000446521 /* DataSource+Delegate.swift in Sources */,

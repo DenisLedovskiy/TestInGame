@@ -7,7 +7,10 @@
 
 import UIKit
 
+//MARK: Описание FlowLayout для CollectionView
+
 class Row {
+
     var attributes = [UICollectionViewLayoutAttributes]()
     var spacing: CGFloat = 0
 

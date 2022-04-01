@@ -8,12 +8,9 @@
 import UIKit
 import SnapKit
 
-protocol ReusableView: AnyObject {
-    static var identifire: String {get}
-}
+// MARK: Класс ячейки CollectionView
 
 class TagCollectionViewCell: UICollectionViewCell {
-
 
     var tagLabel: UILabel = {
         let cellLabel = UILabel(frame: .zero)
@@ -33,7 +30,6 @@ class TagCollectionViewCell: UICollectionViewCell {
     }
 
     func setupViewsCell() {
-
         self.clipsToBounds = true
         self.layer.cornerRadius = 10
         self.backgroundColor = .lightGray
@@ -41,7 +37,6 @@ class TagCollectionViewCell: UICollectionViewCell {
     }
 
     private func setupLayouts() {
-
         tagLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().inset(10)
             make.centerY.equalToSuperview()

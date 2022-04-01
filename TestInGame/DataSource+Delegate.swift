@@ -7,7 +7,9 @@
 
 import UIKit
 
-extension ViewController:  UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+//MARK: CollectionView DataSource и 
+
+extension MainView:  UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
 
     // MARK: Функция на градиент
     func gradient(frame: CGRect) -> CAGradientLayer {
@@ -50,16 +52,15 @@ extension ViewController:  UICollectionViewDataSource, UICollectionViewDelegateF
         cell.configure(text: titles[indexPath.row])
         cell.tagLabel.preferredMaxLayoutWidth = collectionView.frame.width - 16
 
-// MARK: Здесь происходит окрашивание. Если просмто менять фон, то все работает четко. А вот градиент чудит.
+// MARK: Здесь происходит окрашивание. Если просто менять фон, то все работает четко. А вот градиент чудит. Видимо я что-то не понимаю в работе лееров.
 
         if selected.contains(titles[indexPath.row]) {
-//            cell.layer.insertSublayer(gradient(frame: cell.bounds), at: 0)
-            cell.backgroundColor = UIColor(red: 88/255, green: 86/255, blue: 214/255, alpha: 1)
+            cell.layer.insertSublayer(gradient(frame: cell.bounds), at: 0)
+//            cell.backgroundColor = UIColor(red: 88/255, green: 86/255, blue: 214/255, alpha: 1)
         } else {
             cell.layer.removeAllAnimations()
             cell.backgroundColor = .lightGray
         }
-
         return cell
     }
 

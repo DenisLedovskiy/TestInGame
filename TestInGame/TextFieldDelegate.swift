@@ -8,25 +8,9 @@
 import UIKit
 import SnapKit
 
-extension ViewController: UITextFieldDelegate {
+// MARK: При вводе слова, если оно встречается в одном из тегов, то окрашиваем данный тег
 
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-
-        self.textField.layer.cornerRadius = 0
-    }
-
-    func textFieldDidEndEditing(_ textField: UITextField) {
-
-        textField.layer.cornerRadius = 10
-        textField.snp.removeConstraints()
-        textField.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(700)
-            make.centerX.equalToSuperview()
-            make.size.equalTo(CGSize(width: 300, height: 30))
-        }
-        self.collectionView.snp.removeConstraints()
-        configureCollectionView()
-}
+extension MainView: UITextFieldDelegate {
 
     func textFieldDidChangeSelection(_ textField: UITextField) {
         let text = textField.text
